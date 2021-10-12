@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drk_grey_bg"
+    android:orientation="vertical" >
+
+   <Button
+       android:id="@+id/bCopyWeb"
+       android:layout_width="80dp"
+       android:layout_height="30dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="255dp"
+       android:layout_marginBottom="102dp"
+       android:background="@drawable/ic_button"
+       android:clickable="true"
+       android:text="Copy web link"
+       android:textSize="10dp" />
+
+   <TextView
+       android:id="@+id/tvShareText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="50dp"
+       android:layout_marginTop="27dp"
+       android:text="Share"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#FFFFFF" />
+
+   <Button
+       android:id="@+id/bCopyMobile"
+       android:layout_width="80dp"
+       android:layout_height="30dp"
+       android:layout_alignBaseline="@+id/bCopyWeb"
+       android:layout_alignRight="@+id/bCopyWeb"
+       android:layout_marginRight="223dp"
+       android:background="@drawable/ic_button"
+       android:clickable="true"
+       android:text="Copy mobile link"
+       android:textSize="10dp" />
+       
+</RelativeLayout>

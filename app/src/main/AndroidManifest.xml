@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.morsecode.flasher">
+
+    <!-- Include required permissions for Google Mobile Ads to run -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Allows access to the flashlight -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <uses-feature android:name="android.hardware.screen.portrait" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/torch10"
+        android:label="@string/app_name"
+        android:theme="@style/CustomDarkActionBar">
+
+
+        <!-- This meta-data tag is required to use Google Play Services. -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.greencabbage.patch.Splash"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="http"
+                    android:host="powerfultorchlight.com"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.StartingPoint"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/CustomDarkActionBar">
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.STARTINGPOINT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.activity.RemoveAd"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/CustomDarkActionBar"
+            >
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.activity.DISCLAIMER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.activity.Feedback"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/CustomDarkActionBar">
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.activity.FEEDBACK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.activity.SubmitComment"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/CustomDarkActionBar"
+            >
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.activity.SUBMITCOMMENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.activity.Share"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/CustomDarkActionBar"
+            >
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.activity.SHARE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.greencabbage.patch.activity.Menu"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            >
+            <intent-filter>
+                <action android:name="com.greencabbage.patch.activity.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+    </application>
+
+</manifest>

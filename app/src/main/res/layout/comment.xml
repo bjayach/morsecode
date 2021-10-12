@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drk_grey_bg"
+    android:orientation="vertical" >
+
+   <Button
+       android:id="@+id/bSubmitComment"
+       android:layout_width="80dp"
+       android:layout_height="30dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="258dp"
+       android:layout_marginBottom="287dp"
+       android:background="@drawable/ic_button"
+       android:clickable="true"
+       android:text="Send"
+       android:textSize="10dp" />
+
+   <TextView
+       android:id="@+id/tvShareText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="52dp"
+       android:layout_marginTop="53dp"
+       android:text="comment"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="#FFFFFF" />
+
+   <EditText
+       android:id="@+id/etAddComment"
+       android:layout_width="284dp"
+       android:layout_height="199dp"
+       android:layout_alignParentTop="true"
+       android:layout_marginStart="-302dp"
+       android:layout_marginLeft="-302dp"
+       android:layout_marginTop="89dp"
+       android:layout_toEndOf="@+id/bSubmitComment"
+       android:layout_toRightOf="@+id/bSubmitComment"
+       android:ems="10"
+       android:inputType="textMultiLine"
+       android:maxLines="50"
+       android:selectAllOnFocus="false"
+       android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+       android:textColor="@color/cardview_light_background" />
+
+</RelativeLayout>

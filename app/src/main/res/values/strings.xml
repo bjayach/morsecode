@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Morse Code Flasher</string>
+    <string name="radio_label">Morse Code Flasher</string>
+    <string name="radio_url"></string>
+    <string name="app_activity">com.greencabbage.patch.STARTINGPOINT</string>
+    <string name="action_settings">Settings</string>
+    <string name="package_name">com.morsecode.flasher</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1034625998458210/3323294284</string>
+
+
+    <string name="gstore_web_url">https://play.google.com/store/apps/details?id=</string>
+    <string name="gstore_mobile_url">market://details?id=</string>
+    <string name="disclaimer_text">\t TIP 1 - Press HOME button to run the light in the background.\n TIP 2 - Use notification icon to get back to the App quickly</string>
+    <string name="silver_star">\nGive 2 US Dollars</string>
+    <string name="gold_star">\nGive 5 US Dollars</string>
+    <string name="platinum_star">\nGive 12 US Dollars</string>
+    <string name="carbon_star">\nGive 100 US Dollars</string>
+    <string name="feedback_text">Privacy policy of the app can be found at \n\n http://privacypolicyforapps.weebly.com \n\nPlease provide your feedback about this app to FutureGreenApps@gmail.com. Thanks!</string>
+    <string name="share_text">Share this app.</string>
+    <string name="comment_prompt">Send your feedback.</string>
+    <string name="google_store_web_link">\n\nWeb link :\t</string>
+    <string name="google_store_mobile_link">\n\nMobile link :\t</string>
+
+    <!--xx -->
+    <string name="alert_error_consuming">Error while consuming: %1$s</string>
+    <string name="alert_already_purchased">Item is already purchased</string>
+
+    <string name="error_no_skus">We didn\'t find any SKUs to display&#8230; Check your internet
+        connection and make sure your Google Developer Console was setup correctly.</string>
+    <string name="error_billing_unavailable">Billing unavailable. Make sure your Google Play app
+        is setup correctly</string>
+    <string name="error_billing_default">Billing unavailable. Please check your device.</string>
+
+    <string name="button_drive">Drive</string>
+    <string name="button_purchase">Purchase</string>
+    <string name="button_buy">Buy</string>
+    <string name="button_own">Own</string>
+    <string name="button_update">Update</string>
+    <string name="button_change">Change</string>
+    <string name="button_full">Full</string>
+    <string name="toast_full">Full</string>
+
+    <string name="header_inapp"></string>
+    <string name="header_subscriptions">Subscriptions</string>
+
+    <string name="content_description_app_loading_image">App loading image</string>
+    <!--<string name="content_description_title_image"></string>-->
+    <string name="content_desc_gas_gauge_indicator"></string>
+    <string name="content_desc_free_vs_premium_indicator"></string>
+</resources>
